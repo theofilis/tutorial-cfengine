@@ -1,3 +1,5 @@
+# Add a new Policy
+
 * Create a new bundle
 * Save the bundle as a .cf-file
 * Copy the .cf file to /var/cfengine/masterfiles    
