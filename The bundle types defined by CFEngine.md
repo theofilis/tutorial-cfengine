@@ -1,13 +1,12 @@
 # The bundle types defined by CFEngine
 
-The bundle types defined by CFEngine are:
+The bundle types defined by CFEngine are
 
 ## agent
 
 Bundles of type agent are “executable” bundles that can be called from the main
 bundlesequence declaration, or as method calls in the methods: section of another
-agent bundle. In this respect they could be compared to subroutines in other pro-
-gramming languages. They are the most extensive and powerful type of bundle,
+agent bundle. In this respect they could be compared to subroutines in other programming languages. They are the most extensive and powerful type of bundle,
 and the ones that actually implement any changes that we want to make in the
 system. 
 
@@ -71,8 +70,7 @@ contain their own set of allowable promise types, which include:
 
 ## server
 Bundles of type server control the behavior of the cf-serverd process, which has
-the task of serving files to other CFEngine machines that request them (cf-serv-
-erd normally runs on the CFEngine policy hub). This type of bundle can contain
+the task of serving files to other CFEngine machines that request them (cf-serverd normally runs on the CFEngine policy hub). This type of bundle can contain
 two promise types:
 
 * access: to define access permissions to different resources on the server.
@@ -80,8 +78,7 @@ two promise types:
 
 ## knowledge
 Bundles of type knowledge are fully supported only in commercial editions of
-CFEngine, and allow you to document high-level system knowledge in the CFEn-
-gine configuration. This can be used to analyze the system, and to both keep and
+CFEngine, and allow you to document high-level system knowledge in the CFEngine configuration. This can be used to analyze the system, and to both keep and
 deduce information about its behavior and its configuration.
 
 * inferences: specifies relationships between different concepts in the knowledge base, and performs some simple contextual reasoning
