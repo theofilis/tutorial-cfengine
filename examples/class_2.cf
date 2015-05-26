@@ -1,0 +1,16 @@
+body common control
+{
+	bundlesequence => { "test" };
+}
+bundle agent test
+{
+	vars:
+		"hosts"	slist => { "dev_theofilis" };
+
+	classes:
+		"dev" or => { @(hosts) };
+
+	reports:
+		dev::
+			"hello theofilis";
+}
