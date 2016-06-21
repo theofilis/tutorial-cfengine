@@ -1,0 +1,1 @@
+alias cf-push='sudo cf-promises -c ./promises.cf -r && git push'
